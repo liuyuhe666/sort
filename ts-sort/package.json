@@ -1,0 +1,21 @@
+{
+  "name": "ts-sort",
+  "type": "module",
+  "private": true,
+  "module": "index.ts",
+  "scripts": {
+    "lint": "eslint",
+    "lint:fix": "eslint --fix"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "consola": "^3.4.2"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^9.1.0",
+    "@types/bun": "latest",
+    "eslint": "^10.6.0"
+  }
+}
