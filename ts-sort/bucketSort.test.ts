@@ -1,10 +1,11 @@
 import { expect, test } from 'bun:test'
-import bubbleSort from './bubbleSort'
+import bucketSort from './bucketSort'
 import { createRandomArray } from './common'
 
-test('bubbleSort', () => {
+test('bucketSort', () => {
   const arr = createRandomArray(10000, 1, 1000)
-  const bubbleSortResult = bubbleSort([...arr])
+  const bucketSortResult = [...arr]
+  bucketSort(bucketSortResult)
   const sortResult = [...arr].sort((a, b) => a - b)
-  expect(bubbleSortResult).toEqual(sortResult)
+  expect(bucketSortResult).toEqual(sortResult)
 })

@@ -1,10 +1,11 @@
 import { consola } from 'consola'
-import bubbleSort from './bubbleSort'
-import { createRandomIntArray } from './common'
+import { createRandomArray } from './common'
+import mergeSort from './mergeSort'
 
-const arr = createRandomIntArray(10, 1, 1000)
-const bubbleSortResult = bubbleSort([...arr])
+const arr = createRandomArray(10, 1, 1000)
+const mergeSortResult = [...arr]
+mergeSort(mergeSortResult)
 const sortResult = [...arr].sort((a, b) => a - b)
 consola.log(arr)
-consola.log(bubbleSortResult)
+consola.log(mergeSortResult)
 consola.log(sortResult)
